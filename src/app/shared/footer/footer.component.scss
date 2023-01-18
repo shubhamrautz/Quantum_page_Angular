@@ -1,0 +1,78 @@
+.abcon {
+  display: flex;
+  justify-content: center;
+}
+.abcon div {
+  margin: 15px 0 0 5px;
+  font: 14px/18px Quicksand;
+  color: #1f7a54;
+}
+
+.abcon > :nth-child(2) {
+  border: 1px solid #0000001a;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40px;
+  background: #e0e1e1 0% 0% no-repeat padding-box;
+  margin-top: 3vh;
+}
+
+.footer_c {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-icon {
+  width: 91px;
+  height: 30px;
+  background: transparent url('../../../assets/icons/logo used in footer.svg')
+    0% 0% padding-box no-repeat;
+  margin-right: 16px;
+}
+
+.sep {
+  top: 9px;
+  width: 0px;
+  height: 24px;
+  border: 1px solid #0000001f;
+  margin-right: 16px;
+}
+.copyright {
+  position: relative;
+  top: 6px;
+  width: 130px;
+  height: 15px;
+  text-align: left;
+  font: 12px/16px Quicksand;
+
+  color: #616161;
+  margin-right: 8px;
+}
+
+.company {
+  position: relative;
+  top: 6px;
+  width: 131px;
+  height: 15px;
+
+  text-align: left;
+  font: 12px/16px Quicksand;
+
+  color: #616161;
+}
+
+.end {
+  position: relative;
+  top: 6px;
+  width: 106px;
+  height: 15px;
+  text-align: left;
+  font: 12px/16px Quicksand;
+
+  color: #616161;
+}

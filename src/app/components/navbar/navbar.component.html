@@ -1,0 +1,25 @@
+<div class="header-links">
+  <nav class="nav-bar">
+    <ul>
+      <div id = "navbartop" class="links" visibility = ' false'>
+        <li class="tabs" value="active">DASHBOARD</li>
+        <li class="tabs" >CONTENT</li>
+        <li class="tabs">USERS</li>
+        <li class="tabs">REPORTS</li>
+        <li class="tabs">ADMIN</li>
+      </div>
+      <div class="icons">
+        <li class="notifications">
+          <div class="bubble" *ngIf="statsprofile.notifications">{{statsprofile.notifications}}</div>
+        </li>
+        <li class="horn">
+          <div class="bubble" *ngIf="statsprofile.horns">{{statsprofile.horns}}</div>
+        </li>
+        <li class="profile">
+          <div class="bubble" *ngIf="statsprofile.profile">{{statsprofile.profile}}</div>
+        </li>
+        <button aria-controls="navbartop" class="dropdown" aria-expanded="false" (click)="showMenu()"></button>
+      </div>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Quicksand';
+  src: url('./assets/Quicksand font 1/Quicksand-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Quicksand-light';
+  src: url('./assets/Quicksand font 1/static/Quicksand-Medium.ttf')
+    format('truetype');
+  font-weight: 500;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #EEEEEE;;
+}

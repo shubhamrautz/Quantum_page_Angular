@@ -1,0 +1,41 @@
+<div class="tab">
+  <div *ngIf="carddetails.expired" class="expired">expired</div>
+  <div class="tab-image" [ngStyle]="{'background-image' : getUrl()}"></div>
+  <div class="tab-content">
+    <div class="intro">
+      <div class="title">{{carddetails.title}}</div>
+      <button class="favorite" [disabled]="favorite"></button>
+    </div>
+    <div class="subject">
+      <div>{{carddetails.subject}}</div>
+      <div></div>
+      <div>Grade {{carddetails.grade.main}}</div>
+      <div>+{{carddetails.grade.secondary}}</div>
+    </div>
+
+    <div *ngIf="carddetails.syllabus" class="syllabus">
+      <div>{{carddetails.syllabus.units}}</div>
+      <div>Units</div>
+      <div>{{carddetails.syllabus.lessons}}</div>
+      <div>Lessons</div>
+      <div>{{carddetails.syllabus.topics}}</div>
+      <div>Topics</div>
+    </div>
+
+    <select class="select" [disabled]="selectdisabled">
+      <option *ngFor="let d of carddetails.classes">{{ d }}</option>
+    </select>
+
+    <div *ngIf="carddetails.students" class="students">
+      <div>{{carddetails.students}} Students</div>
+      <div class="divider-students" *ngIf="carddetails.duration"></div>
+      <div>{{carddetails.duration}}</div>
+    </div>
+  </div>
+  <div class="f-buttons">
+    <button [disabled]="preview"></button>
+    <button [disabled]="manage"></button>
+    <button [disabled]="grade"></button>
+    <button [disabled]="reports"></button>
+  </div>
+</div>

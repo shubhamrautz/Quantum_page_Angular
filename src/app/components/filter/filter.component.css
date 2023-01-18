@@ -1,0 +1,101 @@
+
+.navbar2{
+    display: flex;
+    margin:24px;
+    background-color: #8ddc97;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+}
+
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58px;
+    flex:1;
+}
+
+.course-icon{
+    background-image: url("../../../assets/icons/courses.svg");
+    width: 30px;
+    height: 30px;
+}
+
+.class-icon{
+    background-image: url("../../../assets/icons/classes.svg");
+    width: 30px;
+    height: 30px;
+}
+
+.class4,.cou4{
+    font-weight: bold;
+    font-size: large;
+    margin-left: 18px;
+    font: bold 24px/28px Quicksand;
+}
+
+.class,.course{
+
+    margin-left: 5px;
+    font: 500 16px/20px Quicksand;
+}
+
+
+.c1[name=active]{
+    border-bottom: 4px solid #222222;
+    
+}
+
+.sort{
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 24px;
+    font:12px/14px Quicksand; 
+    border-bottom: 1px solid #bebebe;
+    z-index: -1;
+}
+
+.sort div select{
+    appearance: none;
+    padding-right: 15px;
+    width: auto;
+    height: 24px;
+    margin-left: 1px;
+    font: 500 16px/20px Quicksand;
+    border: none;
+    background:none;
+    border-bottom: 1px solid #bebebe;
+
+    background: url("../../../assets/icons/arrow-down.svg") no-repeat;
+    background-position: calc(100% - 3px);
+}
+
+select[name=course-name]:focus {
+    outline: 0; 
+}
+.sort .arrow{
+    margin: 1px 10px;
+    width: 18px;
+    height: 18px;
+    background: url("../../../assets/icons/sort.svg") no-repeat;
+    --transform: rotate(180deg);
+}
+
+.sort .sortby{
+    transform: translateY(-10px);
+}
+
+
+
+.sort div{
+    margin: 1px;
+    display: flex;
+
+}
+.sort div:first-of-type{
+    display: flex;
+    align-items: center;
+    color: #686868;
+}

@@ -1,0 +1,39 @@
+.showtabs{
+    display: grid;
+    gap: 24px;
+    margin: 0;    
+}
+   
+@media (min-width:725px){
+    .showtabs{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        margin: 24px 
+    }
+
+
+}
+
+@media (max-width:724px){
+
+    .showtabs{
+        justify-content: center;
+    }
+}
+
+.dashboard-page{
+    height: 100%;
+    width: 100%;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.tab {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 3fr 5fr ;
+    grid-template-rows: 9fr 2fr;
+}

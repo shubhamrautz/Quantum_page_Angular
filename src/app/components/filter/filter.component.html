@@ -1,0 +1,27 @@
+<div class="filter-container">
+  <div class="navbar2">
+    <div class="c c1" name="active">
+      <div class="course-icon"></div>
+      <div class="cou4">{{filterdetails.courses}}</div>
+      <div class="course">Courses</div>
+    </div>
+    <div class="c c1" name="not-active">
+      <div class="class-icon"></div>
+      <div class="class4">{{filterdetails.classes}}</div>
+      <div class="class">Classes</div>
+    </div>
+  </div>
+
+  <div class="sort">
+    <div>Showing {{filterdetails.courses}} of {{filterdetails.courses}} Courses</div>
+    <div>
+      <div class="sortby">Sort by:</div>
+      <select name="course-name">
+          <option>Course Name</option>
+          <option>Course Expiry</option>
+          <option>Course Completion</option>
+      </select>
+      <div class="arrow"></div>
+    </div>
+  </div>
+</div>

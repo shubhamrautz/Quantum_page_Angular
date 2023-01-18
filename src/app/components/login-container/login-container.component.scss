@@ -1,0 +1,267 @@
+.outline {
+  position: absolute;
+  top: 0;
+  width: 488px;
+  height: 4px;
+  background: #3ac7ec;
+  border-radius: 2px 2px 0px 0px;
+  opacity: 1;
+  z-index: 1;
+  margin: 0px;
+}
+
+.login {
+  position: relative;
+  width: 488px;
+  height: 584px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 2px;
+  margin: 56px 0 24px 0;
+}
+
+.back {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+  width: 17px;
+  height: 26px;
+  color: #1f7a54;
+  background-image: url('../../../assets/icons/back.svg');
+}
+
+.login-with {
+  position: absolute;
+  top: 26px;
+  left: 136px;
+  width: 237px;
+  height: 30px;
+
+  text-align: center;
+  font: 600 24px/28px Quicksand;
+  letter-spacing: 0px;
+  color: #222222;
+}
+
+#district {
+  position: absolute;
+  background: url('../../../assets/icons/radio-button-off.svg') no-repeat;
+  top: 82px;
+  left: 32px;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+}
+
+#district:checked,
+#school:checked {
+  background: url('../../../assets/icons/radio-button-on.svg') left center
+    no-repeat;
+}
+#district-label {
+  position: absolute;
+  top: 86px;
+  left: 62px;
+  width: 53px;
+  height: 20px;
+
+  text-align: left;
+  font: 600 16px/20px Quicksand;
+
+  color: #333333;
+}
+
+#school {
+  position: absolute;
+  background: url('../../../assets/icons/radio-button-off.svg') no-repeat;
+  top: 82px;
+  left: 145px;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+}
+
+#school-label {
+  position: absolute;
+  top: 86px;
+  left: 177px;
+  width: 248px;
+  height: 20px;
+  text-align: left;
+  font: 600 16px/20px Quicksand;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+select[name='state'] {
+  position: absolute;
+  top: 149px;
+  left: 32px;
+  width: 424px;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid grey;
+  font: 600 14px/18px Quicksand;
+  appearance: none;
+  background: url('../../../assets/icons/arrow-down.svg') no-repeat;
+  background-position: calc(100%);
+
+  &:focus {
+    position: absolute;
+    border-bottom: solid 1px #1f7a54;
+    outline: 0;
+  }
+}
+
+label[for='state'] {
+  position: absolute;
+  top: 129px;
+  left: 32px;
+  width: 34px;
+  height: 15px;
+
+  text-align: left;
+  font: 12px/16px Quicksand;
+  color: #666666;
+}
+
+label[for='district-list'] {
+  position: absolute;
+  top: 210px;
+  left: 32px;
+  width: 44px;
+  height: 15px;
+
+  text-align: left;
+  font: 12px/16px Quicksand;
+  color: #666666;
+}
+
+select[name='district-list'] {
+  position: absolute;
+  top: 230px;
+  left: 32px;
+  width: 424px;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid grey;
+  font: 600 14px/18px Quicksand;
+  appearance: none;
+  background: url('../../../assets/icons/arrow-down.svg') no-repeat;
+  background-position: 100%;
+
+  &:focus {
+    border-bottom: solid 1px #1f7a54;
+    outline: 0;
+  }
+}
+
+#username {
+  position: absolute;
+  top: 311px;
+  left: 32px;
+  width: 423px;
+  height: 25px;
+  border: none;
+  border-bottom: 1px solid grey;
+  font: 14px/18px Quicksand;
+
+  &:focus {
+    border-bottom: solid 1px #1f7a54;
+    outline: 0;
+  }
+}
+
+label[for='username'] {
+  position: absolute;
+  top: 341px;
+  left: 314px;
+  width: 142px;
+  height: 18px;
+
+  text-align: right;
+  font: 14px/18px Quicksand;
+
+  color: #1f7a54;
+}
+
+#password {
+  position: absolute;
+  top: 392px;
+  left: 32px;
+  width: 424px;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid grey;
+  font: 14px/18px Quicksand;
+
+  &:focus {
+    border-bottom: solid 1px #1f7a54;
+    outline: 0;
+  }
+}
+
+#password_visible {
+  position: absolute;
+  top: 392px;
+  left: 433px;
+  width: 28px;
+  height: 25px;
+  background: transparent url('../../../assets/icons/preview.svg') no-repeat;
+  border: none;
+}
+
+label[for='password'] {
+  position: absolute;
+  top: 422px;
+  left: 314px;
+  width: 144px;
+  height: 18px;
+  text-align: right;
+  font: 14px/18px Quicksand;
+  letter-spacing: 0px;
+  color: #1f7a54;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  top: 464px;
+  left: 32px;
+  width: 24px;
+  height: 24px;
+  background-image: url('../../../assets/icons/checkbox-unchecked.svg');
+  appearance: none;
+
+  &:checked {
+    background-image: url('../../../assets/icons/checkbox-checked.svg');
+  }
+}
+
+label[for='checkbox'] {
+  position: absolute;
+  top: 469px;
+  left: 60px;
+  width: 111px;
+  height: 20px;
+  text-align: left;
+  font: 16px/20px Quicksand;
+  letter-spacing: 0px;
+  color: #222222;
+}
+
+.login-button {
+  position: absolute;
+  top: 520px;
+  left: 136px;
+  width: 216px;
+  height: 40px;
+  font: 14px/18px Quicksand;
+  background: #3fd28b 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px #0000003d;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

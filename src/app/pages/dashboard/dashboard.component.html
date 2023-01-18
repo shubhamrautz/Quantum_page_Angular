@@ -1,0 +1,11 @@
+<div class="dashboard-page">
+  <div>
+    <app-header></app-header>
+    <app-navbar [statsprofile]="details[0]"></app-navbar>
+    <app-filter [filterdetails]="details[0]"></app-filter>
+    <div class="showtabs">
+      <app-card *ngFor="let item of cards" [carddetails]="item"></app-card>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

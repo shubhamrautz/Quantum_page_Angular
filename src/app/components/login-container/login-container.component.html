@@ -1,0 +1,38 @@
+<div class="login">
+  <div class="outline"></div>
+  <div class="back"></div>
+  <div class="login-with">Log in with Quantum</div>
+  <input type="radio" name="field" id="district" />
+  <label for="district" id="district-label">District</label>
+  <input type="radio" name="field" id="school" />
+  <label for="school" id="school-label">Independent School</label>
+
+  <label for="state">State*</label>
+  <select name="state" id="state" #state (change)="onSelected(state.value)">
+    <option *ngFor="let s of states" [value]="s.state">{{ s.state }}</option>
+  </select>
+
+  <label for="district-list">District*</label>
+  <select name="district-list" id="district-list">
+    <option *ngFor="let d of districts">{{ d }}</option>
+  </select>
+
+  <input type="text" placeholder="Username/Email ID*" id="username" />
+  <label for="username">FORGOT USERNAME?</label>
+
+  <input type="text" id="password" #x placeholder="Password*" />
+  <button type="toggle" id="password_visible" (click)="x.type = x.type == 'password'?'text':'password'"></button>
+  <label for="password">FORGOT PASSWORD?</label>
+
+  <input type="checkbox" id="checkbox" checked />
+  <label for="checkbox">Remember Me</label>
+
+  <button
+    type="button"
+    class="login-button"
+    title="Dashboard"
+    (click)="login()"
+  >
+    LOG IN
+  </button>
+</div>
