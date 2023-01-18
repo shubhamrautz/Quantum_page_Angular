@@ -9,6 +9,12 @@ import { Detail } from 'src/app/interfaces/detail';
 export class FilterComponent implements OnInit{
 
   @Input() filterdetails! : Detail;
+  onload(){
+    if(this.filterdetails)
+    return true
+    else
+    return false
+  }
   
   ngOnInit(){
 

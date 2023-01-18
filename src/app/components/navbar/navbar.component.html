@@ -8,7 +8,7 @@
         <li class="tabs">REPORTS</li>
         <li class="tabs">ADMIN</li>
       </div>
-      <div class="icons">
+      <div class="icons" *ngIf="load()">
         <li class="notifications">
           <div class="bubble" *ngIf="statsprofile.notifications">{{statsprofile.notifications}}</div>
         </li>

@@ -25,4 +25,10 @@ export class NavbarComponent {
     }
 
   }
+  load(){
+    if(this.statsprofile)
+    return true
+    else
+    return false
+  }
 }
